@@ -888,17 +888,18 @@ text-align: justify;
 
 #services ul li {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 10px;
 }
 
 #services ul li span {
   font-weight: 500;
+  margin-top: 6px;
   color: var(--text-color);
 }
 
 #services ul li i {
-  font-size: 26px;
+  font-size: 24px;
 }
 
 .accounting-list li:nth-child(1) i {
@@ -992,7 +993,7 @@ text-align: justify;
 @media screen and (min-width: 1200px) {
 
   .approach-swiper {
-    padding: 8rem 6rem;
+    padding: 7.5rem 6rem;
   }
 }
 
