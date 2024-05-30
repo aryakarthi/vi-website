@@ -49,6 +49,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden !important;
 }
 
 html::-webkit-scrollbar {
@@ -72,7 +73,7 @@ body {
   font-size: var(--normal-font-size);
   background-color: var(--body-bg-color);
   color: var(--text-color);
-  overflow-x: hidden;
+  /* overflow-x: hidden !important; */
 }
 
 /* # reset */
