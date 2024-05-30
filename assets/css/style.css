@@ -992,18 +992,18 @@ text-align: justify;
 @media screen and (min-width: 1200px) {
 
   .approach-swiper {
-    padding: 10rem 6rem;
+    padding: 8rem 6rem;
   }
 }
 
-@media screen and (max-width: 1199px) and (min-width: 992px) {
+@media screen and (max-width: 1200px) and (min-width: 992px) {
   .approach-swiper {
     padding: 5rem 2rem;
   }
 }
 
 
-@media screen and (max-width: 991px) and (min-width: 768px) {
+@media screen and (max-width: 992px) and (min-width: 768px) {
   .approach-swiper {
     padding: 3rem 1.5rem;
   }
