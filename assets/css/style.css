@@ -1285,6 +1285,39 @@ text-align: justify;
   z-index: 1;
 }
 
+/* # blogs  */
+
+.blogs-banner {
+  background-image: url("../img/blogs_banner.jpg");
+  height: 450px;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.blogs-banner::before {
+  content: "";
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.blogs-banner-content {
+  height: 450px;
+  display: flex;
+  align-items: center;
+}
+
+.blogs-banner-content h1 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #fff;
+  z-index: 1;
+}
 
 /* # contact info section */
 
@@ -1696,6 +1729,8 @@ text-align: justify;
   color: white;
 }
 
+/* # quick links */
+
 .quick-links {
   margin: 50px 0 30px 0;
 }
@@ -1723,6 +1758,39 @@ text-align: justify;
 }
 
 .quick-links ul li i {
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* # other links */
+
+.other-links {
+  margin: 50px 0 30px 0;
+}
+
+.other-links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.other-links ul li {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.other-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.other-links ul li a:hover {
+  color: var(--orange);
+}
+
+.other-links ul li i {
   font-size: 14px;
   color: #ccc;
 }
