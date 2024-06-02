@@ -28,6 +28,26 @@
   --orange-darken: #de5625;
   --teal-darken: #1b2f45;
   --teal-extra-darken: #132132;
+
+
+  /* # careers page accordion */
+
+  --color-primary: #ff4b4b;
+  --color-text: #545d7a;
+  --color-white: #fff;
+  --color-title: #242e4c;
+  --color-background: #f7f8fb;
+  --color-border: #dae1f5;
+
+  --fs-sm: 1rem;
+  --fs-md: 1.2rem;
+  --fs-lg: 1.5rem;
+  --fw-regular: 500;
+  --fw-medium: 600;
+  --fw-bold: 700;
+
+  --transition: 0.4s ease-in-out;
+  --shadow: 0px 60px 56px -12px rgba(9, 40, 163, 0.05);
 }
 
 @media screen and (min-width: 1024px) {
@@ -281,7 +301,8 @@ a {
 .dropdown__title {
   font-size: var(--normal-font-size);
   font-weight: var(--font-semi-bold);
-  color: var(--teal-blue);}
+  color: var(--teal-blue);
+}
 
 .dropdown__list {
   row-gap: 0.75rem;
@@ -407,7 +428,7 @@ a {
     cursor: pointer;
   }
 
-  .dropdown__item:hover .nav__link{
+  .dropdown__item:hover .nav__link {
     color: var(--orange);
   }
 
@@ -604,7 +625,7 @@ a {
 }
 
 
-/* # clients & events gallery */
+/* # clients gallery */
 
 .swiper {
   width: 100%;
@@ -631,31 +652,7 @@ a {
   background-color: #fff;
 }
 
-.events-gallery {
-  padding: 50px 0;
-  background-color: var(--primary-bg-lighten);
-}
 
-.gallery-swiper .swiper-wrapper {
-  margin: 20px 0;
-}
-
-.gallery-swiper .swiper-slide {
-  background-position: center;
-  background-size: cover;
-  border-radius: 6px;
-  overflow: hidden;
-  width: 100%;
-  height: 300px;
-}
-
-.gallery-swiper .swiper-slide img {
-  display: block;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  object-fit: cover;
-}
 
 /* # why us section */
 
@@ -675,8 +672,8 @@ a {
   font-weight: 600;
 }
 
-.why-us-content p{
-text-align: justify;
+.why-us-content p {
+  text-align: justify;
 }
 
 .why-us-content img {
@@ -759,7 +756,7 @@ text-align: justify;
   border-radius: 4px;
 }
 
-.profile-content p{
+.profile-content p {
   text-align: justify;
 }
 
@@ -1003,6 +1000,7 @@ text-align: justify;
     padding: 2rem 1rem;
   }
 }
+
 
 /* # principles section */
 
@@ -1319,6 +1317,8 @@ text-align: justify;
   z-index: 1;
 }
 
+
+
 /* # contact info section */
 
 .contact-information {
@@ -1600,7 +1600,7 @@ text-align: justify;
   color: var(--teal-blue);
 }
 
-.documents-card p{
+.documents-card p {
   text-align: justify;
 }
 
@@ -1637,7 +1637,7 @@ text-align: justify;
   cursor: pointer;
 }
 
-.documents-card:hover h5{
+.documents-card:hover h5 {
   color: #fff;
 }
 
@@ -1924,6 +1924,256 @@ text-align: justify;
 
 .copyrights-content a:hover {
   color: var(--orange);
+}
+
+/* # careers page   */
+
+.careers-banner {
+  background-image: url("../img/careers/careers_banner.jpg");
+  height: 450px;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.careers-banner::before {
+  content: "";
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.careers-banner-content {
+  height: 450px;
+  display: flex;
+  align-items: center;
+}
+
+.careers-banner-content h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+  z-index: 1;
+}
+
+
+@media screen and (max-width: 576px) {
+  .careers-banner{
+    background-position: left;
+  }
+}
+
+
+.careers-intro h5,
+.careers-intro p {
+  text-align: center;
+}
+
+.careers-intro h5{
+  font-weight: 600;
+}
+
+/* accordion */
+
+.accordion__wrapper {
+  background-color: var(--color-white);
+  box-shadow: var(--shadow);
+  border-radius: 0.5rem;
+  width: 100%;
+  max-width: 60rem;
+}
+
+.accordion__title {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-bold);
+  color: var(--color-title);
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.accordion {
+  border-bottom: 0.1rem solid var(--color-border);
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.accordion:nth-child(1) {
+  padding-top: 1rem;
+}
+
+.accordion__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  padding: 0 1rem;
+}
+
+.accordion__icon {
+  background-color: var(--color-primary);
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: var(--color-white);
+  flex-shrink: 0;
+}
+
+.accordion__question {
+  font-size: var(--fs-md);
+  font-weight: var(--fw-medium);
+  color: var(--color-title);
+}
+
+.accordion__answer {
+  padding: 1rem;
+  margin: 0;
+}
+
+.accordion__content {
+  overflow: hidden;
+  height: 0;
+  transition: var(--transition);
+}
+
+@media screen and (min-width: 768px) {
+  .accordion__wrapper {
+    padding: 1rem 2rem;
+  }
+}
+
+/* # work with us section */
+
+.work-with-us{
+  background-color: #fff;
+}
+
+.work-with-us-container img {
+  border-radius: 4px 0 0 4px;
+}
+
+
+.work-with-us-swiper {
+  height: 100%;
+  background-color: var(--primary-bg-lighten);
+  border-radius: 0 4px 4px 0;
+}
+
+.work-with-us-slide h4 {
+  color: var(--orange);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.work-with-us-slide p {
+  text-indent: 50px;
+}
+
+.work-with-us-slide ul li{
+  margin-bottom: 10px;
+}
+
+.work-with-us-slide ul li span{
+  font-weight: 600;
+  color: var(--teal-blue);
+}
+
+
+@media screen and (min-width: 1200px) {
+
+  .work-with-us-swiper {
+    padding: 6rem 4rem;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+  .work-with-us-swiper {
+    padding: 3rem 2rem;
+  }
+}
+
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .work-with-us-swiper {
+    padding: 3rem 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .work-with-us-swiper {
+    padding: 2rem 1rem;
+  }
+}
+
+
+
+/* # privacy policy page */
+
+.privacy-policy h6{
+  text-indent: 50px;
+  margin-top: 30px;
+  line-height: 1.5;
+}
+
+.policy-intro{
+  text-indent: 50px;
+  margin-bottom: 30px;
+}
+
+.policy-content h5{
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--blue);
+}
+
+.policy-content h5 span{
+  color: #000;
+}
+
+.policy-content p{
+  text-indent: 50px;
+}
+
+/* # refund policy page */
+
+.refund-policy .refund-note{
+  padding: 20px;
+  background-color: var(--primary-bg-lighten);
+}
+
+.refund-policy .refund-note span{
+  color: var(--orange);
+  font-weight: 600;
+}
+
+.refund-content h5{
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--blue);
+}
+
+.refund-content h5 span{
+  color: #000;
+}
+
+.refund-content p{
+  text-indent: 50px;
+  line-height: 1.5;
+}
+
+
+/* # terms and conditions page */
+
+.terms-conditions .tc-content p{
+  line-height: 1.5;
 }
 
 
