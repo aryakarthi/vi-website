@@ -72,8 +72,6 @@ let gallerySwiper = new Swiper(".gallery-swiper", {
 });
 
 
-
-
 var approachSwiper = new Swiper(".approach-swiper", {
   speed: 600,
   parallax: true,
@@ -87,8 +85,21 @@ var approachSwiper = new Swiper(".approach-swiper", {
     el: ".swiper-pagination",
     clickable: true,
   },
-  // navigation: {
-  //   nextEl: ".swiper-button-next",
-  //   prevEl: ".swiper-button-prev",
-  // },
+});
+
+
+
+var workWithUsSwiper = new Swiper(".work-with-us-swiper", {
+  speed: 600,
+  parallax: true,
+  loop: true,
+  grabCursor: true,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
 });
