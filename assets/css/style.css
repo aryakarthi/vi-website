@@ -1001,6 +1001,17 @@ a {
   }
 }
 
+@media screen and (max-width: 991px) {
+
+  .approach-container img {
+    border-radius: 4px 4px 0 0;
+  }
+  
+  .approach-swiper {
+    border-radius: 0 0 4px 4px;
+  }
+}
+
 
 /* # principles section */
 
@@ -1990,7 +2001,6 @@ a {
   border-radius: 4px 0 0 4px;
 }
 
-
 .work-with-us-swiper {
   height: 100%;
   background-color: var(--primary-bg-lighten);
@@ -2020,7 +2030,7 @@ a {
 @media screen and (min-width: 1200px) {
 
   .work-with-us-swiper {
-    padding: 6rem 4rem;
+    padding: 4rem;
   }
 }
 
@@ -2041,6 +2051,18 @@ a {
 
   .work-with-us-swiper {
     padding: 2rem 1rem;
+  }
+}
+
+
+@media screen and (max-width: 991px) {
+
+  .work-with-us-container img {
+    border-radius: 4px 4px 0 0;
+  }
+  
+  .work-with-us-swiper {
+    border-radius: 0 0 4px 4px;
   }
 }
 
