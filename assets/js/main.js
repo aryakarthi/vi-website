@@ -1,4 +1,5 @@
-/*=============== SHOW MENU ===============*/
+// # SHOW MENU
+
 const showMenu = (toggleId, navId) => {
   const toggle = document.getElementById(toggleId),
     nav = document.getElementById(navId);
@@ -11,7 +12,8 @@ const showMenu = (toggleId, navId) => {
 
 showMenu("nav-toggle", "nav-menu");
 
-/*=============== SHOW DROPDOWN MENU ===============*/
+// # SHOW DROPDOWN MENU
+
 const dropdownItems = document.querySelectorAll(".dropdown__item");
 
 dropdownItems.forEach((item) => {
@@ -28,7 +30,8 @@ dropdownItems.forEach((item) => {
   });
 });
 
-// 3. Create a function to display the dropdown
+// # FUNCTION TO SHOW DROPDOWN MENU
+
 const toggleItem = (item) => {
   const dropdownContainer = item.querySelector(".dropdown__container");
 
@@ -41,7 +44,9 @@ const toggleItem = (item) => {
   }
 };
 
-/*=============== DELETE DROPDOWN STYLES ===============*/
+
+// # DELETE DROPDOWN STYLES
+
 const mediaQuery = matchMedia("(min-width: 1118px)"),
   dropdownContainer = document.querySelectorAll(".dropdown__container");
 
@@ -57,7 +62,7 @@ const removeStyle = () => {
   }
 };
 
-// accordion
+// # Job Openings Accordion
 
 const accordions = document.querySelectorAll(".accordion");
 
