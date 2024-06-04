@@ -34,40 +34,58 @@ let clientSwiper = new Swiper(".client-swiper", {
 
 // # Swiper JS - Events Gallery
 
-let gallerySwiper = new Swiper(".gallery-swiper", {
-  effect: "coverflow",
-  lazy: true,
+// let gallerySwiper = new Swiper(".gallery-swiper", {
+//   effect: "coverflow",
+//   lazy: true,
+//   loop: true,
+//   grabCursor: true,
+//   centeredSlides: true,
+//   autoplay: {
+//     delay: 2000,
+//     disableOnInteraction: false,
+//   },
+//   coverflowEffect: {
+//     rotate: 0,
+//     stretch: 0,
+//     depth: 100,
+//     modifier: 1,
+//     slideShadows: true,
+//   },
+//   breakpoints: {
+//     320: {
+//       slidesPerView: 1,
+//       spaceBetween: 10,
+//     },
+//     480: {
+//       slidesPerView: 1,
+//       spaceBetween: 10,
+//     },
+//     768: {
+//       slidesPerView: 2,
+//       spaceBetween: 10,
+//     },
+//     992: {
+//       slidesPerView: 4,
+//       spaceBetween: 10,
+//     },
+//   },
+// });
+
+
+// # Swiper JS - Employees Reviews
+
+var empReviewsSwiper = new Swiper(".emp-reviews-swiper", {
+  speed: 600,
+  parallax: true,
   loop: true,
   grabCursor: true,
-  centeredSlides: true,
   autoplay: {
-    delay: 2000,
+    delay: 5000,
     disableOnInteraction: false,
   },
-  coverflowEffect: {
-    rotate: 0,
-    stretch: 0,
-    depth: 100,
-    modifier: 1,
-    slideShadows: true,
-  },
-  breakpoints: {
-    320: {
-      slidesPerView: 1,
-      spaceBetween: 10,
-    },
-    480: {
-      slidesPerView: 1,
-      spaceBetween: 10,
-    },
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 10,
-    },
-    992: {
-      slidesPerView: 4,
-      spaceBetween: 10,
-    },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
   },
 });
 
@@ -86,7 +104,6 @@ var approachSwiper = new Swiper(".approach-swiper", {
     clickable: true,
   },
 });
-
 
 
 var workWithUsSwiper = new Swiper(".work-with-us-swiper", {

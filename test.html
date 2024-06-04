@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-
     <link rel="shortcut icon" href="../assets/img/vi.png" type="image/x-icon" />
 
     <title>Test</title>
@@ -44,7 +43,6 @@
   </head>
 
   <body>
-
     <style>
       .swiper {
         width: 100%;
@@ -76,8 +74,6 @@
         overflow: hidden;
         object-fit: cover;
       }
-
-
 
       /* employees reviews */
 
@@ -261,9 +257,6 @@
           left: 40%;
         }
       }
-
-
-
     </style>
 
     <!--# top bar -->
@@ -1331,6 +1324,43 @@
       prev.addEventListener("click", prevSlide);
 
       setInterval(nextSlide, 3000);
+
+      let gallerySwiper = new Swiper(".gallery-swiper", {
+        effect: "coverflow",
+        lazy: true,
+        loop: true,
+        grabCursor: true,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+        },
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          480: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          992: {
+            slidesPerView: 4,
+            spaceBetween: 10,
+          },
+        },
+      });
     </script>
 
     <!-- ? Swiper JS -->
