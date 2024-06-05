@@ -672,10 +672,6 @@ a {
   font-weight: 600;
 }
 
-.why-us-content p {
-  text-align: justify;
-}
-
 .why-us-content img {
   display: block;
   width: 50px;
@@ -688,7 +684,7 @@ a {
 /* # about banner section */
 
 .about-banner {
-  background-image: url("../img/5043.jpg");
+  background-image: url("../img/about/about_banner.jpg");
   height: 420px;
   position: relative;
   background-size: cover;
@@ -719,11 +715,6 @@ a {
   z-index: 1;
 }
 
-.aboutus-section {
-  background-color: rgb(233, 233, 233);
-  text-align: justify;
-  padding: 20px;
-}
 
 .about-img img {
   margin-top: 60px;
@@ -756,10 +747,6 @@ a {
   border-radius: 4px;
 }
 
-.profile-content p {
-  text-align: justify;
-}
-
 .about-content {
   height: 100%;
   padding: 30px;
@@ -777,7 +764,7 @@ a {
 .about-content p {
   text-indent: 50px;
   color: var(--text-color);
-  text-align: justify;
+  /* text-align: justify; */
 }
 
 @media screen and (max-width: 576px) {
@@ -792,10 +779,14 @@ a {
   padding: 50px 0;
 }
 
+.who-we-are p{
+  text-indent: 50px;
+}
+
 /* # achievements counters section */
 
 .achievements {
-  background: linear-gradient(rgba(0, 60, 60, 0.5), rgba(0, 60, 60, 0.5)), url("../img/counters-bg.jpg");
+  background: linear-gradient(rgba(0, 60, 60, 0.5), rgba(0, 60, 60, 0.5)), url("../img/about/counters-bg.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -856,7 +847,7 @@ a {
 .team-content p {
   text-indent: 50px;
   color: var(--teal-darken);
-  text-align: justify;
+  /* text-align: justify; */
 }
 
 /* # services section (in about page) */
@@ -957,6 +948,11 @@ a {
 
 /* # approaches section */
 
+.approaches .approach-intro p{
+  text-indent: 50px;
+  margin-bottom: 50px;
+}
+
 .approach-container img {
   border-radius: 4px 0 0 4px;
 }
@@ -1037,7 +1033,7 @@ a {
 
 .principles-content p {
   color: var(--teal-darken);
-  text-align: justify;
+  /* text-align: justify; */
 }
 
 .principles-content img {
@@ -1050,7 +1046,7 @@ a {
 /* # get in touch section */
 
 .get-in-touch {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/14278.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/about/get_in_touch_bg.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -1263,7 +1259,7 @@ a {
 /* # contact banner section */
 
 .contact-banner {
-  background-image: url("../img/contact/5.jpg");
+  background-image: url("../img/contact/contact_banner.jpg");
   height: 450px;
   position: relative;
   background-size: cover;
@@ -1469,13 +1465,24 @@ a {
 
 /* # ------ START UP PAGE ------ */
 
+/* .startup-banner{
+  background-image: url("../img/services/start_up_banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+} */
 
-.startup-banner {
+
+/* .startup-banner {
   height: 420px;
   position: relative;
   display: flex;
   align-items: center;
   z-index: 0;
+  background-image: url("../img/services/start_up_banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .startup-banner::before {
@@ -1523,10 +1530,10 @@ a {
   background-color: var(--teal-blue);
   color: white;
   cursor: pointer;
-}
+} */
 
 
-.startup-banner-business {
+/* .startup-banner-business {
   background-image: url("../img/5043.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -1538,16 +1545,103 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+} */
+
+/* @media screen and (max-width: 576px) {
+  .startup-banner {
+    height: 100vh;
+  }
+} */
+
+
+/* # ----- SERVICES PAGE COMMON STYLES ----- */
+
+/* # services banner */
+
+.services-banner {
+  height: 420px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  z-index: 0;
+}
+
+.services-banner::before {
+  content: "";
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.services-banner .details h2 {
+  position: relative;
+  z-index: 2;
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.services-banner .details p {
+  position: relative;
+  z-index: 2;
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.services-banner .details a {
+  display: inline-block;
+  position: relative;
+  background-color: var(--teal-green);
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  z-index: 20;
+}
+
+.services-banner .details a:hover {
+  background-color: var(--teal-blue);
+  color: white;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 576px) {
-  .startup-banner {
+  .services-banner {
     height: 100vh;
   }
 }
 
 
-/* # ----- SERVICES PAGE COMMON STYLES ----- */
+/* # ------ START UP PAGE ------ */
+
+.startup-banner{
+  background-image: url("../img/services/start_up_banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.ip-legal-banner{
+  background-image: url("../img/services/ip_legal_banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.compliance-banner{
+  background-image: url("../img/services/compliance_banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 
 /* # perks and benefits */
@@ -1581,10 +1675,14 @@ a {
 
 .benefits-content .info {
   text-indent: 46px;
-  text-align: justify;
+  /* text-align: justify; */
 }
 
 /* # documents required */
+
+.documents-required{
+  background-color: #fff;
+}
 
 .documents-card {
   height: 100%;
@@ -1611,9 +1709,6 @@ a {
   color: var(--teal-blue);
 }
 
-.documents-card p {
-  text-align: justify;
-}
 
 .bg-bubble {
   height: 120px;
