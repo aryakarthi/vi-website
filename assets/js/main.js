@@ -90,3 +90,6 @@ accordions.forEach((accordion, index) => {
     });
   });
 });
+
+
+

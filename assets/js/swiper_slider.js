@@ -71,35 +71,7 @@ let clientSwiper = new Swiper(".client-swiper", {
 //   },
 // });
 
-// # Swiper JS - Employees Reviews
 
-let empReviewsSwiper = new Swiper(".emp-reviews-swiper", {
-  speed: 600,
-  parallax: true,
-  loop: true,
-  grabCursor: true,
-  autoplay: {
-    delay: 5000,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});
-
-// Add event listeners for mouseenter and mouseleave to pause and resume autoplay
-document
-  .querySelector(".emp-reviews-swiper")
-  .addEventListener("mouseenter", function () {
-    empReviewsSwiper.autoplay.stop();
-  });
-
-document
-  .querySelector(".emp-reviews-swiper")
-  .addEventListener("mouseleave", function () {
-    empReviewsSwiper.autoplay.start();
-  });
 
 // # Swiper JS - Approaches
 
@@ -134,3 +106,32 @@ let workWithUsSwiper = new Swiper(".work-with-us-swiper", {
     clickable: true,
   },
 });
+
+// # Swiper JS - Employees Reviews
+
+let empReviewsSwiper = new Swiper(".emp-reviews-swiper", {
+  speed: 600,
+  parallax: true,
+  loop: true,
+  grabCursor: true,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
+document
+  .querySelector(".emp-reviews-swiper")
+.addEventListener("mouseenter", function () {
+    empReviewsSwiper.autoplay.stop();
+  });
+
+document
+  .querySelector(".emp-reviews-swiper")
+  .addEventListener("mouseleave", function () {
+    empReviewsSwiper.autoplay.start();
+  });
