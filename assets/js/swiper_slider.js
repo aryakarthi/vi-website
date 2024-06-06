@@ -1,4 +1,4 @@
-import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
 
 // # Swiper JS - Clients
 
@@ -71,10 +71,9 @@ let clientSwiper = new Swiper(".client-swiper", {
 //   },
 // });
 
-
 // # Swiper JS - Employees Reviews
 
-var empReviewsSwiper = new Swiper(".emp-reviews-swiper", {
+let empReviewsSwiper = new Swiper(".emp-reviews-swiper", {
   speed: 600,
   parallax: true,
   loop: true,
@@ -89,8 +88,22 @@ var empReviewsSwiper = new Swiper(".emp-reviews-swiper", {
   },
 });
 
+// Add event listeners for mouseenter and mouseleave to pause and resume autoplay
+document
+  .querySelector(".emp-reviews-swiper")
+  .addEventListener("mouseenter", function () {
+    empReviewsSwiper.autoplay.stop();
+  });
 
-var approachSwiper = new Swiper(".approach-swiper", {
+document
+  .querySelector(".emp-reviews-swiper")
+  .addEventListener("mouseleave", function () {
+    empReviewsSwiper.autoplay.start();
+  });
+
+// # Swiper JS - Approaches
+
+let approachSwiper = new Swiper(".approach-swiper", {
   speed: 600,
   parallax: true,
   loop: true,
@@ -105,8 +118,9 @@ var approachSwiper = new Swiper(".approach-swiper", {
   },
 });
 
+// # Swiper JS - Why Work With Us
 
-var workWithUsSwiper = new Swiper(".work-with-us-swiper", {
+let workWithUsSwiper = new Swiper(".work-with-us-swiper", {
   speed: 600,
   parallax: true,
   loop: true,
